@@ -27,7 +27,6 @@ $('#oenter').tap(function(){
 	$.post('mock/skill.json', {}, function(response){
      var data=response;
      console.log(data);
-     $("#scroller ul").append($("<li class='theli'><div>类型</div><div>熟悉程度</div><div>名称</div><div>时间</div></li>"));
      for(var i in data){
      $("#scroller ul").append($("<li class='theli'><div>"+data[i].category+"</div><div>"+data[i].level+"</div><div>"+data[i].name+"</div><div>"+data[i].time+"</div></li>"));
      }
@@ -36,8 +35,7 @@ $('#oenter').tap(function(){
 });
 $('#skill').tap(function(){
     $("#scroller ul li").remove();
-    $.post('mock/skill.json', {}, function(response){
-     var data=response;
+    $.post('mock/skill.json', {}, function(data){
      console.log(data);
      $("#scroller ul").append($("<li class='theli'><div>类型</div><div>熟悉程度</div><div>名称</div><div>时间</div></li>"));
      for(var i in data){
@@ -48,8 +46,7 @@ $('#skill').tap(function(){
 });
 $('#project').tap(function(){
 	$("#scroller ul li").remove();
-	$.post('mock/project.json', {}, function(response){
-     var data=response;
+	$.post('mock/project.json', {}, function(data){
      console.log(data);
      $("#scroller ul").append($("<li class='theli'><div>类型</div><div>熟悉程度</div><div>名称</div><div>时间</div></li>"));
      for(var i in data){
@@ -60,8 +57,7 @@ $('#project').tap(function(){
 });
 $('#work').tap(function(){
 	$("#scroller ul li").remove();
-	$.post('mock/work.json', {}, function(response){
-     var data=response;
+	$.post('mock/work.json', {}, function(data){
      console.log(data);
      $("#scroller ul").append($("<li class='theli'><div>类型</div><div>熟悉程度</div><div>名称</div><div>时间</div></li>"));
      for(var i in data){

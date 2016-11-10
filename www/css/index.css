@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Swiper 3.3.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -471,6 +472,7 @@ html, body {
   height: 100%; }
 
 body {
+  font-family: "微软雅黑";
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -479,7 +481,6 @@ body {
   padding: 0; }
 
 .swiper-container {
-  border: 1px solid red;
   width: 100%;
   height: 100%;
   margin: 20px auto; }
@@ -504,8 +505,8 @@ body {
 
 .slide1 img {
   position: absolute;
-  top: 16%;
-  left: auto;
+  top: 10%;
+  left: 50%;
   width: 30%;
   height: 30%;
   border-radius: 100%; }
@@ -514,17 +515,206 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  border-radius: 10px; }
+  border-radius: 10px;
+  background-color: #278BF4;
+  color: white;
+  border: none; }
 
 #getlocation {
+  border: none;
+  background-color: #278BF4;
+  color: white;
   position: absolute;
-  left: 80%;
+  right: 0;
   top: 0;
   border-radius: 10px; }
 
 .slide1 {
-  background: url(../img/sy.png) no-repeat;
+  background: url(../img/back.png) no-repeat;
   background-size: 100% 100%; }
+
+.icon-yonghu {
+  position: absolute;
+  top: 50%;
+  left: 15%; }
+
+.icon-iconfontdianhua {
+  position: absolute;
+  top: 55%;
+  left: 15%; }
+
+.icon-duanxin {
+  position: absolute;
+  top: 60%;
+  left: 15%; }
+
+.slide1 .icon-dingwei {
+  position: absolute;
+  top: 65%;
+  left: 15%; }
+
+.slide1 > .iconfont {
+  color: white; }
+
+.slide1 p {
+  margin: 0;
+  padding: 0;
+  color: #BAD9E4; }
+
+.p1 {
+  position: absolute;
+  top: 50%;
+  left: 25%; }
+
+.p2 {
+  position: absolute;
+  top: 55%;
+  left: 25%; }
+
+.p3 {
+  position: absolute;
+  top: 60%;
+  left: 25%; }
+
+.p4 {
+  position: absolute;
+  top: 65%;
+  left: 25%; }
+
+.slide2 {
+  background: url(../img/back2.jpg) no-repeat; }
+
+.img1 {
+  position: absolute;
+  left: auto;
+  height: auto; }
+
+.img2 {
+  position: absolute;
+  left: auto;
+  height: auto; }
+
+.img3 {
+  position: absolute;
+  left: auto;
+  top: 70%; }
+
+.slide2 span {
+  color: white; }
+
+.sp1 {
+  position: absolute;
+  left: auto;
+  top: 33%; }
+
+.sp2 {
+  position: absolute;
+  left: auto;
+  top: 39%; }
+
+.sp3 {
+  position: absolute;
+  left: auto;
+  top: 46%; }
+
+.sp4 {
+  position: absolute;
+  left: auto;
+  top: 52%; }
+
+.sp5 {
+  position: absolute;
+  left: auto;
+  top: 58%; }
+
+.slide3 {
+  color: gold;
+  font-size: 12px;
+  background: url(../img/back3.jpg); }
+
+.slide3 span {
+  width: 50%;
+  text-shadow: 0px 0px 1px yellow; }
+
+.imgs1 {
+  position: absolute;
+  top: -20%;
+  left: 35%; }
+
+.span1 {
+  position: absolute;
+  top: 15%;
+  left: 35%; }
+
+.imgs2 {
+  position: absolute;
+  top: -10%;
+  left: -30%; }
+
+.span2 {
+  position: absolute;
+  top: 30%;
+  left: auto; }
+
+.imgs3 {
+  position: absolute;
+  top: 15%;
+  left: -20%; }
+
+.span3 {
+  position: absolute;
+  top: 40%;
+  left: 30%; }
+
+.imgs4 {
+  position: absolute;
+  top: 35%;
+  left: -20%; }
+
+.span4 {
+  position: absolute;
+  top: 50%;
+  left: auto; }
+
+.imgs5 {
+  position: absolute;
+  top: 70%;
+  left: 0%; }
+
+.span5 {
+  border-radius: 10px;
+  border: 1px #888888 solid;
+  position: absolute;
+  top: 80%;
+  left: auto;
+  color: white;
+  text-shadow: 0 0 0 white;
+  background-color: #4A87EE; }
+
+.blackb {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+#scroller li {
+  font-size: 12px;
+  display: flex;
+  height: 60px;
+  line-height: 60px;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto; }
+
+#scroller li > div {
+  flex: 1;
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+  overflow: hidden; }
+
+#scroller li > div:nth-of-type(3) {
+  line-height: 12px; }
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -3089,8 +3279,6 @@ body {
 
 #scroller li {
   padding: 0 10px;
-  height: 40px;
-  line-height: 40px;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #fff;
   background-color: #fafafa;
